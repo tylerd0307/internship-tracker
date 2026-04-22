@@ -12,3 +12,9 @@ th, td {
   border: 1px solid #ccc;
   padding: 10px;
 }
+
+/* Highlight rows that need follow-up */
+.follow-up {
+  background-color: #ffe6e6;  /* Light red background */
+  font-weight: bold;
+}
