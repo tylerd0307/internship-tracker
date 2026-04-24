@@ -4,19 +4,19 @@ let applications = [
     company: "Google",
     role: "Software Engineer Intern",
     status: "Applied",
-    lastContact: "2026-04-01"  // Example: April 1, 2026
+    lastContact: "2026-04-01"
   },
   {
     company: "Microsoft",
     role: "Data Analyst Intern",
     status: "Interview",
-    lastContact: "2026-03-30"  // Example: March 30, 2026
+    lastContact: "2026-03-30"
   },
   {
     company: "Amazon",
     role: "Product Manager Intern",
     status: "Rejected",
-    lastContact: "2026-04-05"  // Example: April 5, 2026
+    lastContact: "2026-04-05"
   }
 ];
 
@@ -35,10 +35,9 @@ function renderTable() {
     const needsFollowUp = daysSinceContact > 10;
 
     if (needsFollowUp) {
-      row.classList.add("follow-up");  // Add class for highlighting
+      row.classList.add("follow-up");
     }
 
-    // Create table cells
     row.innerHTML = `
       <td>${app.company}</td>
       <td>${app.role}</td>
@@ -51,18 +50,34 @@ function renderTable() {
   });
 }
 
-// Initial render when page loads
-renderTable();
+// Show/hide the form
+const formContainer = document.getElementById("formContainer");
+const appForm = document.getElementById("appForm");
 
-// Existing add button listener (we'll update this next)
-const addBtn = document.getElementById("addBtn");
-addBtn.addEventListener("click", () => {
-  // For now, add a sample application and re-render
+document.getElementById("addBtn").addEventListener("click", () => {
+  formContainer.style.display = "block";
+});
+
+document.getElementById("cancelBtn").addEventListener("click", () => {
+  formContainer.style.display = "none";
+  appForm.reset();
+});
+
+// Handle form submission
+appForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
   applications.push({
-    company: "Sample Company",
-    role: "Sample Role",
-    status: "Applied",
-    lastContact: new Date().toISOString().split('T')[0]  // Today's date in YYYY-MM-DD
+    company: document.getElementById("company").value,
+    role: document.getElementById("role").value,
+    status: document.getElementById("status").value,
+    lastContact: document.getElementById("lastContact").value
   });
+
+  formContainer.style.display = "none";
+  appForm.reset();
   renderTable();
 });
+
+// Initial render when page loads
+renderTable();
