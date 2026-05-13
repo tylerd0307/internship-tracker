@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>internship tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +12,7 @@
   <button id="addBtn">+ add application</button>
 
   <div id="formContainer" style="display:none">
-    <h2>add application</h2>
+    <h2 id="formTitle">add application</h2>
     <form id="appForm">
       <label>company: <input type="text" id="company" required></label>
       <label>role: <input type="text" id="role" required></label>
@@ -24,7 +25,7 @@
         </select>
       </label>
       <label>last contact: <input type="date" id="lastContact" required></label>
-      <button type="submit">add</button>
+      <button type="submit" id="submitBtn">add</button>
       <button type="button" id="cancelBtn">cancel</button>
     </form>
   </div>
@@ -37,6 +38,7 @@
         <th>status</th>
         <th>last contact</th>
         <th>follow-up</th>
+        <th>actions</th>
       </tr>
     </thead>
 

@@ -19,6 +19,12 @@ th, td {
   font-weight: bold;
 }
 
+/* Status color coding */
+.status-applied    { background-color: #e0e0e0; color: #555555; }
+.status-interview  { background-color: #dbeafe; color: #1d4ed8; }
+.status-offer      { background-color: #dcfce7; color: #166534; }
+.status-rejected   { background-color: #fee2e2; color: #991b1b; }
+
 #formContainer {
   margin: 15px 0;
   padding: 15px;
