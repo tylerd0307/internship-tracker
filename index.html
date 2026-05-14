@@ -25,9 +25,15 @@
         </select>
       </label>
       <label>last contact: <input type="date" id="lastContact" required></label>
+      <label>notes: <textarea id="notes" placeholder="optional"></textarea></label>
       <button type="submit" id="submitBtn">add</button>
       <button type="button" id="cancelBtn">cancel</button>
     </form>
+  </div>
+
+  <div id="filterBar">
+    <button class="filter-btn active" id="filterAll">all</button>
+    <button class="filter-btn" id="filterFollowUp">needs follow-up</button>
   </div>
 
   <table>
@@ -38,6 +44,7 @@
         <th>status</th>
         <th>last contact</th>
         <th>follow-up</th>
+        <th>notes</th>
         <th>actions</th>
       </tr>
     </thead>

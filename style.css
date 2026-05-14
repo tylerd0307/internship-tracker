@@ -25,6 +25,24 @@ th, td {
 .status-offer      { background-color: #dcfce7; color: #166534; }
 .status-rejected   { background-color: #fee2e2; color: #991b1b; }
 
+#filterBar {
+  margin: 15px 0;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+
 #formContainer {
   margin: 15px 0;
   padding: 15px;
