@@ -53,6 +53,7 @@ function renderTable() {
     row.innerHTML = `
       <td>${app.company}</td>
       <td>${app.role}</td>
+      <td>${app.location || ""}</td>
       <td class="status-${app.status.toLowerCase()}">${app.status}</td>
       <td>${app.lastContact}</td>
       <td>${needsFollowUp ? "⚠️" : ""}</td>
@@ -72,6 +73,7 @@ function startEdit(index) {
   editIndex = index;
   document.getElementById("company").value = app.company;
   document.getElementById("role").value = app.role;
+  document.getElementById("location").value = app.location || "";
   document.getElementById("status").value = app.status;
   document.getElementById("lastContact").value = app.lastContact;
   document.getElementById("notes").value = app.notes || "";
@@ -111,6 +113,7 @@ appForm.addEventListener("submit", (e) => {
   const entry = {
     company: document.getElementById("company").value,
     role: document.getElementById("role").value,
+    location: document.getElementById("location").value,
     status: document.getElementById("status").value,
     lastContact: document.getElementById("lastContact").value,
     notes: document.getElementById("notes").value

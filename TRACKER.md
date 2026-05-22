@@ -3,8 +3,8 @@
 
 ## Overview
 - **Total requirement**: 30 hours minimum
-- **Hours logged**: 12.25 hrs through week 5, week 6 in progress
-- **Hours remaining**: ~17.75 hrs across weeks 6–11
+- **Hours logged**: 24.0 hrs through week 8
+- **Hours remaining**: ~6 hrs across weeks 9–11
 - **Pace needed**: ~3 hrs/week
 
 ## Hours Log
@@ -16,8 +16,8 @@
 | 4 | — | 2.25 | 9.0 | Add form with real input + Notion write-up |
 | 5 | 12.0 | 3.25 | 12.25 | Delete functionality, ⚠️ icon, confirmation dialog, charset fix, status color coding |
 | 6 | 15.0 | 3.0 | 15.25 | Edit functionality, mid-project reflection |
-| 7 | 18.0 | | | |
-| 8 | 21.0 | | | |
+| 7 | 18.0 | 4.25 | 19.5 | localStorage, notes field, filter bar, GitHub Pages deployment |
+| 8 | 21.0 | 4.5 | 24.0 | Usability testing, follow-up legend, filter bar styling, location field |
 | 9 | 24.0 | | | |
 | 10 | 27.0 | | | |
 | 11 | 30.0 | | | |
@@ -57,23 +57,26 @@
 - [ ] **Write Week 6 Notion write-up**: mid-project reflection, what changed from original plan
 - [ ] Update hours log in TRACKER.md
 
-### Week 7
-**Theme**: Persistence + optional fields (~3.5 hrs)
-- [ ] Save array to localStorage on every change
-- [ ] Load from localStorage on page load, fall back to sample data
-- [ ] Decide: add `applicationDate` and `notes` fields (defined in Week 2 data model but not yet built)
-- [ ] Code cleanup: remove placeholder comments
-- [ ] **Write Week 7 Notion write-up**: localStorage decision rationale, data model revisit
-- [ ] Update hours log in TRACKER.md
+### Week 7 ✅
+**Theme**: Persistence + optional fields
+- [x] Save array to localStorage on every change
+- [x] Load from localStorage on page load, fall back to sample data
+- [x] Added notes field (optional) from Week 2 data model
+- [x] Decided against applicationDate — no product logic depends on it yet
+- [x] Filter bar: All / Needs Follow-Up toggle
+- [x] Code cleanup: removed placeholder comments
+- [x] Deploy to GitHub Pages
+- [x] Write Week 7 Notion write-up
+- [x] Update hours log in TRACKER.md
 
-### Week 8
-**Theme**: Usability testing (~3.5 hrs)
-- [ ] Recruit 2–3 classmates or friends to try the app
-- [ ] Observe without guiding — just watch
-- [ ] Document: what confused them, what they tried to do that didn't work
-- [ ] Synthesize top 3 issues; decide what to fix vs. leave out of scope
-- [ ] **Write Week 8 Notion write-up**: testing findings, synthesis, prioritization decisions
-- [ ] Update hours log in TRACKER.md
+### Week 8 ✅
+**Theme**: Usability testing
+- [x] Usability testing with Cohen, Josh, Jacob (original Week 1 interviewees)
+- [x] Documented 3 issues: follow-up legend, filter bar clarity, location field
+- [x] Fixed all 3 issues
+- [x] Noted CSV import as out-of-scope future consideration
+- [x] Write Week 8 Notion write-up
+- [x] Update hours log in TRACKER.md
 
 ### Week 9
 **Theme**: Refinements (~3.5 hrs)
@@ -112,8 +115,7 @@
 - [ ] Persist data across sessions (localStorage)
 
 ## Known Gaps vs. Week 2 Spec
-- `applicationDate` field — defined in data model, not yet in the form or table
-- `notes` field (optional) — defined in data model, not yet implemented
+- `applicationDate` field — intentionally excluded; no product logic depends on it within MVP scope
 
 ## Out of Scope — Do Not Add
 - User authentication or accounts

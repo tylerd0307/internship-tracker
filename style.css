@@ -27,20 +27,34 @@ th, td {
 
 #filterBar {
   margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .filter-btn {
   padding: 6px 14px;
-  margin-right: 8px;
-  border: 1px solid #ccc;
-  background: white;
+  border: 2px solid #ccc;
+  background: #f0f0f0;
   cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.filter-btn:hover {
+  border-color: #999;
 }
 
 .filter-btn.active {
   background: #333;
   color: white;
   border-color: #333;
+}
+
+#followUpLegend {
+  font-size: 13px;
+  color: #666;
+  margin-left: 8px;
 }
 
 #formContainer {

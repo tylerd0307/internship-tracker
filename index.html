@@ -16,6 +16,7 @@
     <form id="appForm">
       <label>company: <input type="text" id="company" required></label>
       <label>role: <input type="text" id="role" required></label>
+      <label>location: <input type="text" id="location" placeholder="optional"></label>
       <label>status:
         <select id="status">
           <option>Applied</option>
@@ -34,6 +35,7 @@
   <div id="filterBar">
     <button class="filter-btn active" id="filterAll">all</button>
     <button class="filter-btn" id="filterFollowUp">needs follow-up</button>
+    <span id="followUpLegend">⚠️ = no contact in 10+ days</span>
   </div>
 
   <table>
@@ -41,6 +43,7 @@
       <tr>
         <th>company</th>
         <th>role</th>
+        <th>location</th>
         <th>status</th>
         <th>last contact</th>
         <th>follow-up</th>
