@@ -3,8 +3,8 @@
 
 ## Overview
 - **Total requirement**: 30 hours minimum
-- **Hours logged**: 24.0 hrs through week 8
-- **Hours remaining**: ~6 hrs across weeks 9–11
+- **Hours logged**: 26.5 hrs through week 9
+- **Hours remaining**: ~3.5 hrs across weeks 10–11
 - **Pace needed**: ~3 hrs/week
 
 ## Hours Log
@@ -18,7 +18,7 @@
 | 6 | 15.0 | 3.0 | 15.25 | Edit functionality, mid-project reflection |
 | 7 | 18.0 | 4.25 | 19.5 | localStorage, notes field, filter bar, GitHub Pages deployment |
 | 8 | 21.0 | 4.5 | 24.0 | Usability testing, follow-up legend, filter bar styling, location field |
-| 9 | 24.0 | | | |
+| 9 | 24.0 | 2.5 | 26.5 | Visual polish — headers, buttons, form, empty state, page layout |
 | 10 | 27.0 | | | |
 | 11 | 30.0 | | | |
 
@@ -78,13 +78,18 @@
 - [x] Write Week 8 Notion write-up
 - [x] Update hours log in TRACKER.md
 
-### Week 9
-**Theme**: Refinements (~3.5 hrs)
-- [ ] Fix top 2–3 issues from usability testing
-- [ ] Visual polish: spacing, form layout, any feedback-driven changes
-- [ ] Quick re-test with 1 person to verify fixes
-- [ ] **Write Week 9 Notion write-up**: what changed, why, what you'd do differently
-- [ ] Update hours log in TRACKER.md
+### Week 9 ✅
+**Theme**: Visual polish
+- [x] Table header dark background + white text
+- [x] Notes column max-width with ellipsis overflow
+- [x] Form inputs consistent width, textarea styled and resizable
+- [x] Action buttons styled — edit (grey), delete (red-tinted)
+- [x] Empty state for filter when no follow-ups needed
+- [x] Add button styled — blue, rounded, hover state
+- [x] Page title styled — bold, underline, better hierarchy
+- [x] Page max-width + centered layout
+- [x] Write Week 9 Notion write-up
+- [x] Update hours log in TRACKER.md
 
 ### Week 10
 **Theme**: Polish + report (~3.5 hrs)

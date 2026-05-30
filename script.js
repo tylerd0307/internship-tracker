@@ -37,6 +37,13 @@ function renderTable() {
       })
     : applications;
 
+  if (filtered.length === 0) {
+    const emptyRow = document.createElement("tr");
+    emptyRow.innerHTML = `<td colspan="8" id="emptyState">no applications need follow-up 🎉</td>`;
+    tableBody.appendChild(emptyRow);
+    return;
+  }
+
   filtered.forEach(app => {
     const index = applications.indexOf(app);
     const row = document.createElement("tr");
@@ -57,10 +64,10 @@ function renderTable() {
       <td class="status-${app.status.toLowerCase()}">${app.status}</td>
       <td>${app.lastContact}</td>
       <td>${needsFollowUp ? "⚠️" : ""}</td>
-      <td>${app.notes || ""}</td>
+      <td class="notes-cell">${app.notes || ""}</td>
       <td>
-        <button onclick="startEdit(${index})">edit</button>
-        <button onclick="deleteApp(${index})">delete</button>
+        <button class="btn-edit" onclick="startEdit(${index})">edit</button>
+        <button class="btn-delete" onclick="deleteApp(${index})">delete</button>
       </td>
     `;
 
